@@ -1,0 +1,40 @@
+{
+  "name": "quasar-app-extension-qnotifymanager",
+  "version": "1.0.0-alpha.0",
+  "description": "qnotifymanager is a notification app extension for Quasar",
+  "author": "Lucas Nogueira <lucasfernandesnog@gmail.com>",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": "https://github.com/lucasfernog/app-extension-qnotifymanager/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfernog/app-extension-qnotifymanager.git"
+  },
+  "homepage": "https://github.com/lucasfernog/app-extension-qnotifymanager",
+  "license": "MIT",
+  "keywords": [
+    "quasar",
+    "app",
+    "app extension",
+    "extension",
+    "notify",
+    "toast",
+    "snackbar",
+    "notification"
+  ],
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "fs": "^0.0.2",
+    "path": "^0.12.7"
+  }
+}
