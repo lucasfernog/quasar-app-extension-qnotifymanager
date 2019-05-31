@@ -6,11 +6,6 @@
  */
 
 const extendWithNotifyManager = function (api, conf) {
-  // make sure there is a plugins array
-  if (!conf.framework.plugins) {
-    conf.framework.plugins = []
-  }
-
   // for brevity
   let plugins = conf.framework.plugins
 
@@ -20,19 +15,8 @@ const extendWithNotifyManager = function (api, conf) {
     plugins.push('Notify')
   }
 
-  // make sure there is a boot array
-  if (!conf.boot) {
-    conf.boot = []
-  }
-
   // for brevity
   let boot = conf.boot
-
-  // make sure qnotifymanager boot file is registered
-  if (!boot.includes('qnotifymanager')) {
-    boot.push('qnotifymanager')
-    console.log(` App Extension (qnotifymanager) Info: 'Adding qnotifymanager boot reference to your quasar.conf.js'`)
-  }
 
   // make sure qnotifymanagerinit boot file is registered
   if (!boot.includes('~quasar-app-extension-qnotifymanager/boot/notifymanagerinit.js')) {

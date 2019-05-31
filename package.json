@@ -25,7 +25,12 @@
     "notify",
     "toast",
     "snackbar",
-    "notification"
+    "positive",
+    "negative",
+    "info",
+    "warning",
+    "type",
+    "message"
   ],
   "engines": {
     "node": ">= 8.9.0",

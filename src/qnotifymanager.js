@@ -28,8 +28,10 @@ export function notify(opts) {
         } else {
             notifyDefaults = def
         }
+        if (notifyDefaults.getMessage) {
+            opts.message = notifyDefaults.getMessage.apply(this.__vm, [opts.message])
+        }
         notifyOptions = opts
     }
-
     quasarNotify.apply(this, [Object.assign(notifyDefaults, notifyOptions)])
 }
